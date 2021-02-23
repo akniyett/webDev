@@ -1,0 +1,33 @@
+<h1>Hello {{number}} </h1>
+<p>{{message}}</p>
+<p>{{numbers}}</p>
+
+<ul>
+  <li *ngFor="let num of numbers">
+    {{num}}
+  </li>
+</ul>
+<ul>
+  <li *ngFor="let i of students; let s = index;">
+    {{s+1}} {{i.id}} - {{i.full_name}}
+  </li>
+</ul>
+
+<h4 *ngIf="isMsg==false">{{message}}</h4>
+<button (click)='btnClick()'>Click it</button>
+
+<fieldset>
+  <input type="text" [(ngModel)] = "display">
+  <button (click)='addItem()'>add Item</button>
+</fieldset>
+
+<ul>
+  <li *ngFor="let i of items; let s = index">
+    <p>{{i}}</p> 
+    <button (click)="remove(s)">remove</button>
+  </li>
+</ul>
+
+
+
+<router-outlet></router-outlet>
