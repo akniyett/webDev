@@ -1,1 +1,20 @@
-<p>product-details works!</p>
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+    <div class="images">
+        <img src="{{product.img1}}" width="300px">
+        <img src="{{product.img2}}" width="300px">
+        <img src="{{product.img3}}" width="300px">
+    </div>
+    <h3>{{ product.name }}</h3>
+    <h4>{{ product.price | currency }}</h4>
+    <p>Ratings: {{product.ratings}}</p>
+    <p>{{ product.description }}</p>
+    <button (click)="addToCart(product)">Buy</button>
+    <a href="https://telegram.me/share/url?url={{product.url}}">
+        <button>
+          Share
+        </button>
+    </a>
+  
+</div>

@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Roboto', Arial, sans-serif;
-    color: #616161;
+    color: black;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -10,6 +10,7 @@
   
   body {
     margin: 0;
+    text-align: center;
   }
   
   .container {
@@ -121,6 +122,15 @@
     color: white;
     margin: 0;
   }
+
+  app-top-bar a{
+    margin-top: -38px;
+    margin-left: 940px;
+    position: absolute;
+    text-align: right;
+    justify-content: center;
+    color:royalblue;
+  }
   
   /* Checkout Cart, Shipping Prices */
   
@@ -133,6 +143,12 @@
     justify-content: space-between;
     padding: 16px 32px;
     margin-bottom: 8px;
+    margin-left: 350px;
     border-radius: 2px;
     background-color: #EEEEEE;
   }
+  
+  app-product-details a{
+    padding-left: 10px;
+  }
+  
